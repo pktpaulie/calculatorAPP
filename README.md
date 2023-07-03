@@ -1,2 +1,2 @@
 # calculatorAPP
-An app the calculates two numbers and displays the result
+An app that calculates two numbers and displays the result
