@@ -9,29 +9,32 @@ def index(request):
 
 def calculate(request):
     answer = ''
+    computations = Computation.objects.all()
+    form = CalculatorForm(request.POST)   
     if request.method == "POST":
-        form = CalculatorForm(request.POST)
-            
+           
         if form.is_valid():
-            first_number = request.GET.get("first_number")
-            operand = request.GET.get("operation")
-            second_number = request.GET.get("second_number")
-            answer = request.GET.get("answer")
-            if operand is "+":
+            first_number = request.POST.get("first_number")
+            operand = request.POST.get("operation")
+            second_number = request.POST.get("second_number")
+            if operand == "+":
                 answer = int(first_number) + int(second_number)
-            elif operand is "-":
+            elif operand == "-":
                 answer = int(first_number) - int(second_number)
-            elif operand is "/":
+            elif operand == "/":
                 answer = int(first_number) / int(second_number)
-            elif operand is "*":
+            elif operand == "*":
                 answer = int(first_number) * int(second_number)
             #return answer
-            form.save()
+            
+            computations = Computation(first_number=first_number, operation=operand, second_number=second_number, answer=answer)
+            computations.save()
+            #form.save()
 
 
     context = {
         'form': form,
-        'answer': answer,
+        
         }
 
 
