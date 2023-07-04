@@ -8,11 +8,20 @@
 <body>
     
     <h1>Calculator App</h1>
-
+    
+    
     <form action="{% url 'calculate' %}" method="POST">
         {% csrf_token %}
         <!-- {{ form }} -->
-        <input type="text" name="answer" hidden>
+        
+        <!-- <input type="text" name="answer" value="{{ computation.answer }}"> -->
+        {% if answer %}
+            <table>
+                <tr>
+                    <td>{{ answer }}</td>
+                </tr>
+            </table>
+        {% endif %} 
         <br/>
         <input type="text" name="first_number" placeholder="Enter First Number" required>
         <br/>
@@ -20,20 +29,24 @@
         <br/>
         <input type="text" name="second_number" placeholder="Enter Second Number" required>
         <br/> 
-        <input type="submit" value="Submit">
+        <button type="submit" value="calculate" >Calculate</button>
 
         <!-- <button type="submit" value="Submit">Submit</button> -->
     </form>
     <br/>
-    <button type="submit" value="History">History</button>
+    <button type="submit" value="History"><a href="{% url 'history' %}">History</a></button>
     <br/>
-    
-        <textarea style="width: 400; height: 200;" name="history" readonly>
-            {% for computation in computations %}
+
+    {% if computations %}
+        {% for computation in computations %}
+            <table>
+                <tr>
+                    <td>{{ computation }} = {{ computation.answer }}</td>
+                </tr>
+            </table>
             
-                {{computation}}
-            {% endfor %}
-        </textarea>
+        {% endfor %}
+    {% endif %}
 
     
 </body>
