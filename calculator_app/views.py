@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, HttpResponseRedirect
+from django.shortcuts import render, redirect
 from django.urls import reverse
 from .models import Computation
 from .forms import *
@@ -27,25 +27,19 @@ def calculate(request):
                 answer = int(first_number) / int(second_number)
             elif operand == "*":
                 answer = int(first_number) * int(second_number)
-            #return answer
             
             data = Computation(first_number=first_number, operation=operand, second_number=second_number, answer=answer)
             data.save()
             data = Computation.objects.last()
-            #form.save()
-
 
         context = {
             'form': form,
             'data': data,
             'answer': answer,
             }
-        #return redirect("index")
-        #return HttpResponseRedirect(reverse("index"))
 
     return render(request, "index.html", {'answer': answer})
 
 def read_history(request):
     computations = Computation.objects.order_by("-id")[:5]
-    #return redirect("index")
     return render(request, "index.html", {"computations":computations})
