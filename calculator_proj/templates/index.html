@@ -14,13 +14,8 @@
         {% csrf_token %}
         <!-- {{ form }} -->
         
-        <!-- <input type="text" name="answer" value="{{ computation.answer }}"> -->
         {% if answer %}
-            <table>
-                <tr>
-                    <td>{{ answer }}</td>
-                </tr>
-            </table>
+            <input type="text" value="{{ answer }}" readonly>
         {% endif %} 
         <br/>
         <input type="text" name="first_number" placeholder="Enter First Number" required>
