@@ -1,5 +1,6 @@
 # nginx.default
 
+
 server {
     listen 8020;
     server_name example.org;
