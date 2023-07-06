@@ -30,6 +30,7 @@ def calculate(request):
             data = Computation(first_number=first_number, operation=operand, second_number=second_number, answer=answer)
             data.save()
             data = Computation.objects.last()
+            computations = Computation.objects.order_by("-id")[:5]
 
         # context = {
         #     'form': form,
@@ -37,9 +38,9 @@ def calculate(request):
         #     'answer': answer,
         #     }
 
-    return render(request, "index.html", {'answer': answer})
+    return render(request, "index.html", {'answer': answer, "computations": computations})
 
 
 def read_history(request):
-    computations = Computation.objects.order_by("-id")[:5]
-    return render(request, "index.html", {"computations": computations})
+    my_computations = Computation.objects.order_by("-id")[:5]
+    return render(request, "index.html", {"computations": my_computations})
