@@ -1,0 +1,12 @@
+#calc_title{
+    margin-top: 30px;
+    padding: 25%;
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+#my_answer{
+    max-height: 30%;
+}
