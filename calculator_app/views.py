@@ -24,9 +24,16 @@ def calculate(request):
             elif operand == "-":
                 answer = int(first_number) - int(second_number)
             elif operand == "/":
-                answer = int(first_number) / int(second_number)
+                if second_number != 0:
+                    answer = int(first_number) / int(second_number)
+                else:
+                    return str("error, cant divide zero...")
             elif operand == "*":
                 answer = int(first_number) * int(second_number)
+            elif operand == "^":
+                answer = int(first_number) ** int(second_number)
+            else:
+                answer = "invalid operator"
             data = Computation(first_number=first_number, operation=operand, second_number=second_number, answer=answer)
             data.save()
             data = Computation.objects.last()
