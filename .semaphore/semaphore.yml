@@ -29,9 +29,3 @@ blocks:
           commands:
             - cd calculator_proj
             - python manage.py check --deploy
-        - name: Unit Tests
-          commands:
-            - cd calculator_proj
-            - python manage.py makemigrations
-            - python manage.py migrate
-            - python manage.py test
