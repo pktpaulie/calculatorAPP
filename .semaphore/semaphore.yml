@@ -27,15 +27,13 @@ blocks:
       jobs:
         - name: Unit tests
           commands:
-            - cd calculator_proj
             - python manage.py makemigrations
             - python manage.py migrate
             - python manage.py test
         - name: Checklist
           commands:
-            - cd calculator_proj
             - python manage.py check --deploy
         - name: Style
           commands:
             - pip install flake8
-            - flake8 martor_demo/ --max-line-length=127
+            - flake8 calculator_proj/ --max-line-length=127
