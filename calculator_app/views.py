@@ -24,10 +24,10 @@ def calculate(request):
             elif operand == "-":
                 answer = int(first_number) - int(second_number)
             elif operand == "/":
-                if second_number != 0:
+                try:
                     answer = int(first_number) / int(second_number)
-                else:
-                    return str("error, cant divide zero...")
+                except ZeroDivisionError:
+                    answer = "Error: Cannot divide by zero"
             elif operand == "*":
                 answer = int(first_number) * int(second_number)
             elif operand == "^":
