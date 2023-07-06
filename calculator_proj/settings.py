@@ -13,11 +13,19 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 
+<<<<<<< HEAD
 """import dj_database_url
 
 import environ
 env = environ.Env()
 environ.Env.read_env()"""
+=======
+# import dj_database_url
+
+# import environ
+# env = environ.Env()
+# environ.Env.read_env()
+>>>>>>> fd80d453ab90c6c21260f23bca2d59786f244e0c
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -80,16 +88,27 @@ WSGI_APPLICATION = "calculator_proj.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+<<<<<<< HEAD
+=======
+
+>>>>>>> fd80d453ab90c6c21260f23bca2d59786f244e0c
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": BASE_DIR / "db.sqlite3",
     }
+<<<<<<< HEAD
 } 
 
 """DATABASES = {
     'default': dj_database_url.parse(env('DATABASE_URL'))
 }"""
+=======
+}
+# DATABASES = {
+#     'default': dj_database_url.parse(env('DATABASE_URL'))
+# }
+>>>>>>> fd80d453ab90c6c21260f23bca2d59786f244e0c
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -126,6 +145,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = "static/"
+
+# Docker Static files path
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

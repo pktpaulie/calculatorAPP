@@ -8,4 +8,3 @@ urlpatterns = [
     path("read_history", views.read_history, name="history")
 
 ]
-
