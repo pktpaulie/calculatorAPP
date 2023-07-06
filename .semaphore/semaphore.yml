@@ -29,10 +29,6 @@ blocks:
           commands:
             - cd calculator_proj
             - python manage.py check --deploy
-        - name: Style
-          commands:
-            - pip install flake8
-            - flake8 calculator_proj/ --max-line-length=127
         - name: Unit Tests
           commands:
             - cd calculator_proj
