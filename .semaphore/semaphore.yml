@@ -37,3 +37,20 @@ blocks:
           commands:
             - pip install flake8
             - flake8 calculator_proj/ --max-line-length=127
+after_pipeline:
+  task:
+    jobs:
+      - name: Dockerize
+        commands:
+          - 'echo "${DOCKER_PASSWORD}" | '
+          - 'docker login -u "${DOCKER_USERNAME}" --password-stdin'
+          - 'docker pull '
+          - '$DOCKER_USERNAME/calculator_proj:latest || true'
+          - 'docker build --cache-from=$DOCKER_USERNAME/calculator_proj:latest -t '
+          - '$DOCKER_USERNAME/calculator_proj:latest .'
+          - 'docker push $DOCKER_USERNAME/calculator_proj:latest'
+promotions:
+  - name: Dockerize pipeline
+    pipeline_file: pipeline_2.yml
+    auto_promote:
+      when: branch = 'master' AND result = 'passed'
