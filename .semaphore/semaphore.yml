@@ -44,7 +44,7 @@ after_pipeline:
         commands:
           - 'echo "DpG#&JwrhbS59w4" | docker login -u "pktpaulie" --password-stdin'
           - 'docker pull $DOCKER_USERNAME/calculator_proj:latest || true'
-          - 'docker build --cache-from=$DOCKER_USERNAME/calculator_proj:latest -t '
+          - 'docker build --cache-from=$DOCKER_USERNAME/calculator_proj:latest -t .'
           - '$DOCKER_USERNAME/calculator_proj:latest .'
           - 'docker push $DOCKER_USERNAME/calculator_proj:latest'
 promotions:
