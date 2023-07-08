@@ -17,5 +17,7 @@ blocks:
         commands:
           - echo "nuD0cker?21" | docker login -u "pktpaulie" --password-stdin
           - 'docker pull pktpaulie/calculator:latest || true'
-          - 'docker build -t pktpaulie/calculator:latest .'
+          - export DOCKER_BUILDKIT=0
+          - export COMPOSE_DOCKER_CLI_BUILD=0
+          - 'docker build --cache-from=pktpaulie/calculator:latest -t pktpaulie/calculator:latest .'
           - 'docker push pktpaulie/calculator:latest'
