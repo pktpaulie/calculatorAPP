@@ -43,9 +43,9 @@ after_pipeline:
       - name: Dockerize
         commands:
           - echo "nuD0cker?21" | docker login -u "pktpaulie" --password-stdin
-          - 'docker pull $DOCKER_USERNAME/calculator_proj:latest || true'
-          - 'docker build --cache-from=$DOCKER_USERNAME/calculator_proj:latest -t $DOCKER_USERNAME/calculator_proj:latest .'
-          - 'docker push $DOCKER_USERNAME/calculator_proj:latest'
+          - 'docker pull $DOCKER_USERNAME/calculator:latest || true'
+          - 'docker build --cache-from=$DOCKER_USERNAME/calculator:latest -t $DOCKER_USERNAME/calculator:latest .'
+          - 'docker push $DOCKER_USERNAME/calculator:latest'
 promotions:
   - name: Dockerize pipeline
     pipeline_file: pipeline_2.yml
