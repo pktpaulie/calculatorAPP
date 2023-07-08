@@ -42,11 +42,13 @@ after_pipeline:
     jobs:
       - name: Dockerize
         commands:
-          - echo "nuD0cker?21" | docker login -u "pktpaulie" --password-stdin
-          - 'docker pull pktpaulie/calculator:latest || true'
-          - cd calculator
-          - 'docker build pktpaulie/calculator:latest -t pktpaulie/calculator:latest .'
-          - 'docker push pktpaulie/calculator:latest'
+          - sem-version python 3.9
+          - checkout
+          - cache restore
+          - mkdir -p .pip_cache
+          - pip install --cache-dir .pip_cache -r requirements.txt
+          - 'python manage.py makemigrations '
+          - python manage.py migrate
 promotions:
   - name: Dockerize pipeline
     pipeline_file: pipeline_2.yml
