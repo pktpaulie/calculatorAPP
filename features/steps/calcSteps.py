@@ -22,6 +22,24 @@ def step_then_check_answer(context, expected_answer):
     assert actual_answer == expected_answer
 
 def calculate(context):
-    # Implement the calculation logic using the context variables
-    # Return the calculated answer
-    pass
+    first_number = int(context.first_number)
+    second_number = int(context.second_number)
+    operation = context.operation
+
+    if operation == "+":
+        answer = first_number + second_number
+    elif operation == "-":
+        answer = first_number - second_number
+    elif operation == "/":
+        try:
+            answer = first_number / second_number
+        except ZeroDivisionError:
+            answer = "Error: Cannot divide by zero"
+    elif operation == "*":
+        answer = first_number * second_number
+    elif operation == "^":
+        answer = first_number ** second_number
+    else:
+        answer = "invalid operator"
+
+    return answer
