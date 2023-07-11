@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "calculator_app",
-    "bootstrap4"
+    "bootstrap4",
 ]
 
 MIDDLEWARE = [
