@@ -7,11 +7,12 @@ pipeline {
 pipeline{
     agent any
     stages {
-    
+        
         stage(\'Setup Python Virtual ENV for dependencies\'){
        
       steps  {
             sh \'\'\'
+            git clone https://github.com/pktpaulie/calculator_proj.git
             chmod +x envsetup.sh
             ./envsetup.sh
             \'\'\'}
