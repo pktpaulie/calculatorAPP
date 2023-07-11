@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 pipeline {
   agent any
   stages {
@@ -110,3 +113,4 @@ node {stage(\'Test\')
 
         }
       }
+>>>>>>> e460324ff041f0cf6f5b7d4ae2b0ba8c259a81d1

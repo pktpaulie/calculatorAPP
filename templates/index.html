@@ -4,31 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "{% static 'css/main.css' %}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="/static/js/main.js" ></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "{% static 'css/main.css' %}">
     <title>Calculator</title>
 </head>
 <body>
-    
-    
     <div class="container container-fluid" id="calc_title">
         <div class="justify-content-center body">
-            <h2>Calculator App</h2>    
+            <h2>Calculator App</h2>
             <form action="{% url 'calculate' %}" method="POST">
                 {% csrf_token %}                
-                
                     <input type="text" value="{{ answer }}" class="form-control" id="my_answer" readonly>
                 <br/>
-                
                 <input type="text" name="first_number" class="form-control" placeholder="Enter First Number" required>
                 <br/>
                 <input type="text" name="operation" class="form-control" placeholder="Operation(+, -, /, *, ^)" required>
                 <br/>
                 <input type="text" name="second_number" class="form-control" placeholder="Enter Second Number" required>
                 <br/> 
-                <button type="submit" class="btn btn-outline-success" value="calculate" >Calculate</button>
+                <button type="submit" class="btn btn-outline-success" value="calculate" id="calculate-button">Calculate</button>
             </form>
             <br/>
 
