@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Pre-build') {
       steps {
-        sh '''node {
+        sh '''pipeline{
     def mvnHome
     stage(\'Preparation\') { // for display purposes
         // Get some code from a GitHub repository
