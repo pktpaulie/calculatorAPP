@@ -39,12 +39,6 @@ def calculate(request):
             data = Computation.objects.last()
             computations = Computation.objects.order_by("-id")[:5]
 
-        # context = {
-        #     'form': form,
-        #     'data': data,
-        #     'answer': answer,
-        #     }
-
     return render(request, "index.html", {'answer': answer, "computations": computations})
 
 

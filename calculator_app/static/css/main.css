@@ -1,13 +1,3 @@
-#calc_title{
-    margin-top: 30px;
-    padding: 25%;
-    background-color: rgb(58, 25, 179);
-    color: white;
-    text-align: center;
-    border: 5px solid;
-
-}
-
-#my_answer{
-    max-height: 30%;
+body{
+    background-color: aqua;
 }
