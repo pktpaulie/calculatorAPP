@@ -10,9 +10,7 @@ node {
         deleteDir()
         checkout scm
         sh \'git submodule update --init --recursive\'
-        env.GIT_URL = sh(returnStdout: true, script: \'git config --get remote.origin.url\').trim()
-        env.GIT_BRANCH = sh(returnStdout: true, script: \'git rev-parse --abbrev-ref HEAD\').trim()
-        env.GIT_COMMIT = sh(returnStdout: true, script: \'git rev-parse HEAD\').trim()
+        sh "https://github.com/pktpaulie/calculator_proj.git"
         def workspace = pwd()
         sh "cp /var/jenkins_home/deploy-app-vars.yml ${workspace}/ci/ansible/"
         sh "cp /var/jenkins_home/ansible-hosts ${workspace}/ci/ansible/hosts"
@@ -21,6 +19,7 @@ node {
         fi\'\'\'
         sh ". venv/bin/activate"
         sh "pip install django"
+        sh "pip install behave"
         sh "pip install -r requirements.txt"
         sh "python manage.py makemigrations"
         sh "python manage.py migrate"
@@ -33,30 +32,30 @@ node {
     }
 
     stage('Test') {
-      steps {
-        sh '''#!groovy
+      parallel {
+        stage('Test') {
+          steps {
+            sh '''#!groovy
 
 node {stage(\'Test\') 
 {
         sh "python manage.py test"
      }
 }'''
-      }
-    }
-
-    stage('Quality-Gate') {
-      steps {
-        sh '''node {stage(\'Test\') 
-{
-   stage("SonarQube Quality Gate") {
-        timeout(time: 1, unit: \'HOURS\') {
-            def qg = waitForQualityGate()
-            if (qg.status != \'OK\') {
-                error "Pipeline aborted due to quality gate failure: ${qg.status}"
-            }
+          }
         }
+
+        stage('') {
+          steps {
+            sh '''node {stage(\'Test\') 
+{
+   stage("BDD") {
+        behave
     }
 }'''
+          }
+        }
+
       }
     }
 
