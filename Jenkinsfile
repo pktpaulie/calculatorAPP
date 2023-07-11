@@ -12,7 +12,7 @@ pipeline{
        
       steps  {
             sh \'\'\'
-            git clone https://github.com/pktpaulie/calculator_proj.git
+            sh \'${WORKSPACE}/jenkins/
             chmod +x envsetup.sh
             ./envsetup.sh
             \'\'\'}
