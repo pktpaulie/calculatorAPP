@@ -50,9 +50,11 @@ def calculate(request):
             data = Computation.objects.last()
             computations = Computation.objects.order_by("-id")[:5]
 
-            # Log the all data to the txt file, numbers and operands
-            logging.info(
-                f"Computation Logic: {first_number} {operand} {second_number} = {answer}")
+        # context = {
+        #     'form': form,
+        #     'data': data,
+        #     'answer': answer,
+        #     }
 
     return render(request, "index.html", {'answer': answer, "computations": computations})
 
