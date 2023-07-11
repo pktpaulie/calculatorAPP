@@ -3,67 +3,65 @@ pipeline {
   stages {
     stage('Pre-build') {
       steps {
-        sh '''node{
-    def mvnHome
-    stage(\'Preparation\') { // for display purposes
-        // Get some code from a GitHub repository
-        git \'https://github.com/pktpaulie/calculator_proj.git\'
-        // Get the Maven tool.
-        // ** NOTE: This \'M3\' Maven tool must be configured
-        // **       in the global configuration.
-        mvnHome = tool \'M3\'
+        sh '''#!groovy
+
+node {
+    stage(\\\'Preparation\\\') {
+        deleteDir()
+        checkout scm
+        sh \\\'git submodule update --init --recursive\\\'
+        sh "https://github.com/pktpaulie/calculator_proj.git"
+        def workspace = pwd()
+        sh "cp /var/jenkins_home/deploy-app-vars.yml ${workspace}/ci/ansible/"
+        sh "cp /var/jenkins_home/ansible-hosts ${workspace}/ci/ansible/hosts"
+        sh \\\'\\\'\\\'if [ ! -d "venv" ]; then
+            virtualenv venv
+        fi\\\'\\\'\\\'
+        sh ". venv/bin/activate"
+        sh "pip install django"
+        sh "pip install behave"
+        sh "pip install -r requirements.txt"
+        sh "python manage.py makemigrations"
+        sh "python manage.py migrate"
     }
-    stage(\'Build\') {
-        // Run the maven build
-        withEnv(["MVN_HOME=$mvnHome"]) {
-            if (isUnix()) {
-                sh \'"$MVN_HOME/bin/mvn" -Dmaven.test.failure.ignore clean package\'
-            } else {
-                bat(/"%MVN_HOME%\\bin\\mvn" -Dmaven.test.failure.ignore clean package/)
-            }
-        }
-    }
-    stage(\'Results\') {
-        junit \'**/target/surefire-reports/TEST-*.xml\'
-        archiveArtifacts \'target/*.jar\'
-    }
+
 }
 
 '''
-        }
       }
+    }
 
-      stage('Test') {
-        parallel {
-          stage('Test') {
-            steps {
-              sh '''#!groovy
+    stage('Test') {
+      parallel {
+        stage('Test') {
+          steps {
+            sh '''#!groovy
 
 node {stage(\'Test\') 
 {
         sh "python manage.py test"
      }
 }'''
-            }
           }
+        }
 
-          stage('error') {
-            steps {
-              sh '''node {stage(\'Test\') 
+        stage('error') {
+          steps {
+            sh '''node {stage(\'Test\') 
 {
    stage("BDD") {
         behave
     }
 }'''
-            }
           }
-
         }
-      }
 
-      stage('Staging-Deploy') {
-        steps {
-          sh '''node {    
+      }
+    }
+
+    stage('Staging-Deploy') {
+      steps {
+        sh '''node {    
      stage(\'Staging deploy\') {
         ansiColor(\'xterm\') {
             ansiblePlaybook(
@@ -75,24 +73,24 @@ node {stage(\'Test\')
         }
     }
 }'''
-        }
       }
+    }
 
-      stage('Deploy') {
-        steps {
-          sh '''stage(\'Production deploy approval\') {
+    stage('Deploy') {
+      steps {
+        sh '''stage(\'Production deploy approval\') {
     timeout(time: 5, unit: \'DAYS\') {
         def deploy = input(id: \'userInput\', message: \'Deploy to production?\')
     }
 }
 
 '''
-          }
         }
+      }
 
-        stage('Production') {
-          steps {
-            sh '''node {
+      stage('Production') {
+        steps {
+          sh '''node {
     stage(\'Production deploy\') {
         ansiColor(\'xterm\') {
             ansiblePlaybook(
@@ -105,8 +103,8 @@ node {stage(\'Test\')
     }
 }
 '''
-            }
           }
-
         }
+
       }
+    }
