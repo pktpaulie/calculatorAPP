@@ -3,12 +3,15 @@ pipeline {
   stages {
     stage('Pre-build') {
       steps {
-        sh '''node{
+        sh '''./
+pipeline{
     stages {
         stage(\'Setup Python Virtual ENV for dependencies\'){
         steps  {
             sh \'\'\'
-            pip install django
+            sh \'${WORKSPACE}/jenkins/
+            chmod +x envsetup.sh
+            ./envsetup.sh
             \'\'\'}
         }
         stage(\'Setup Gunicorn Setup\'){
@@ -31,40 +34,40 @@ pipeline {
 }
 
 '''
-        }
       }
+    }
 
-      stage('Test') {
-        parallel {
-          stage('Test') {
-            steps {
-              sh '''#!groovy
+    stage('Test') {
+      parallel {
+        stage('Test') {
+          steps {
+            sh '''#!groovy
 
 node {stage(\'Test\') 
 {
         sh "python manage.py test"
      }
 }'''
-            }
           }
+        }
 
-          stage('error') {
-            steps {
-              sh '''node {stage(\'Test\') 
+        stage('error') {
+          steps {
+            sh '''node {stage(\'Test\') 
 {
    stage("BDD") {
         behave
     }
 }'''
-            }
           }
-
         }
-      }
 
-      stage('Staging-Deploy') {
-        steps {
-          sh '''node {    
+      }
+    }
+
+    stage('Staging-Deploy') {
+      steps {
+        sh '''node {    
      stage(\'Staging deploy\') {
         ansiColor(\'xterm\') {
             ansiblePlaybook(
@@ -76,24 +79,24 @@ node {stage(\'Test\')
         }
     }
 }'''
-        }
       }
+    }
 
-      stage('Deploy') {
-        steps {
-          sh '''stage(\'Production deploy approval\') {
+    stage('Deploy') {
+      steps {
+        sh '''stage(\'Production deploy approval\') {
     timeout(time: 5, unit: \'DAYS\') {
         def deploy = input(id: \'userInput\', message: \'Deploy to production?\')
     }
 }
 
 '''
-          }
         }
+      }
 
-        stage('Production') {
-          steps {
-            sh '''node {
+      stage('Production') {
+        steps {
+          sh '''node {
     stage(\'Production deploy\') {
         ansiColor(\'xterm\') {
             ansiblePlaybook(
@@ -106,8 +109,8 @@ node {stage(\'Test\')
     }
 }
 '''
-            }
           }
-
         }
+
       }
+    }
