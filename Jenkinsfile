@@ -1,50 +1,58 @@
-pipeline {
-  agent any
-  stages {
+#!groovy
 
-    stage('Git') {
-      steps {
-        echo 'Testing..'
-        sh '''#!groovy
-pipeline {
-    agent any
-    stage(\\\'Preparation\\\') {
+node {
+    stage('Preparation') {
         deleteDir()
         checkout scm
+        sh 'git submodule update --init --recursive'
         
-    }
-}'''
-      }
-    }
-    stage('Setup') {
-      steps {
-        sh \'\'\'if [ ! -d "venv" ]; then
+        def workspace = pwd()
+        sh "cp /var/jenkins_home/deploy-app-vars.yml ${workspace}/ci/ansible/"
+        sh "cp /var/jenkins_home/ansible-hosts ${workspace}/ci/ansible/hosts"
+        sh '''if [ ! -d "venv" ]; then
             virtualenv venv
-        fi\'\'\'
+        fi'''
         sh ". venv/bin/activate"
         sh "pip install django"
-        sh "pip install behave"
-        sh "pip install pytest"
         sh "pip install -r requirements.txt"
         sh "python manage.py makemigrations"
         sh "python manage.py migrate"
-        }
-      }
+    }
 
     stage('Test') {
-      steps {
-        echo 'Testing..'
-        sh '''stage(\'Test\') {
         sh "python manage.py test"
-    }'''
-        }
-      }
-
-      stage('Deploy') {
-        steps {
-          echo 'Deploying....'
-        }
-      }
-
     }
-  }
+
+    
+
+    stage('Staging deploy') {
+        ansiColor('xterm') {
+            ansiblePlaybook(
+                    colorized: true,
+                    inventory: 'ci/ansible/hosts',
+                    playbook: 'ci/ansible/deploy-app-staging.yml',
+                    sudoUser: null
+            )
+        }
+    }
+
+}
+
+stage('Production deploy approval') {
+    timeout(time: 5, unit: 'DAYS') {
+        def deploy = input(id: 'userInput', message: 'Deploy to production?')
+    }
+}
+
+node {
+    stage('Production deploy') {
+        ansiColor('xterm') {
+            ansiblePlaybook(
+                    colorized: true,
+                    inventory: 'ci/ansible/hosts',
+                    playbook: 'ci/ansible/deploy-app-production.yml',
+                    sudoUser: null
+            )
+        }
+    }
+}
