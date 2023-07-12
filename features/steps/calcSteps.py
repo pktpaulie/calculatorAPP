@@ -32,10 +32,8 @@ def calculate(context):
     elif operation == "-":
         answer = first_number - second_number
     elif operation == "/":
-
         try:
             answer = first_number / second_number
-            
         except ZeroDivisionError:
             answer = "Error: Cannot divide by zero"
     elif operation == "*":
