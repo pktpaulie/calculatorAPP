@@ -1,0 +1,7 @@
+2023-07-12 01:17:22,113 - INFO - Using the addition logic of calculator Gp-3
+2023-07-12 01:17:22,170 - INFO - Computation Logic: 12 + 12 = 24
+2023-07-12 01:17:22,579 - WARNING - Not Found: /static/css/main.css
+2023-07-12 01:17:22,598 - WARNING - Not Found: /static/js/main.js
+2023-07-12 01:17:23,210 - WARNING - Not Found: /static/css/main.css
+2023-07-12 01:17:23,222 - WARNING - Not Found: /static/js/main.js
+2023-07-12 01:17:23,322 - WARNING - Not Found: /favicon.ico
