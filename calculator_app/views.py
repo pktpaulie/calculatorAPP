@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Computation
 from .forms import CalculatorForm
 
@@ -11,10 +11,10 @@ def index(request):
 
 def calculate(request):
     answer = ''
-    data = Computation.objects.all()
+    computations = Computation.objects.order_by("-id")[:5]
 
-    form = CalculatorForm(request.POST)
     if request.method == "POST":
+        form = CalculatorForm(request.POST)
         if form.is_valid():
             first_number = request.POST.get("first_number")
             operand = request.POST.get("operation")
@@ -36,9 +36,9 @@ def calculate(request):
                 answer = "invalid operator"
             data = Computation(first_number=first_number, operation=operand, second_number=second_number, answer=answer)
             data.save()
-            data = Computation.objects.last()
-            computations = Computation.objects.order_by("-id")[:5]
+            return render('index')
 
+    form = CalculatorForm()
     return render(request, "index.html", {'answer': answer, "computations": computations})
 
 

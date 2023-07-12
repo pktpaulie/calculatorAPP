@@ -16,6 +16,7 @@ class CalculateViewTest(TestCase):
             'second_number': '3',
         }
         response = self.client.post(self.url, form_data)
+        self.assertEqual(response.status_code, 200)
         self.assertEqual(response.context['answer'], 2)
 
         # Check if data is saved in the database
@@ -34,12 +35,13 @@ class CalculateViewTest(TestCase):
             'second_number': '3',
         }
         response = self.client.post(self.url, form_data)
+        self.assertEqual(response.status_code, 200)
         self.assertEqual(response.context['answer'], 'invalid operator')
 
         # Check that no data is saved in the database
         self.assertFalse(Computation.objects.exists())
 
-    # Add more test cases for form validation, division by zero, etc.
+
 
 
 class CalculatorFormTest(TestCase):
@@ -52,4 +54,3 @@ class CalculatorFormTest(TestCase):
         form = CalculatorForm(data=form_data)
         self.assertTrue(form.is_valid())
 
-    # Add more test cases for form validation, invalid input, etc.

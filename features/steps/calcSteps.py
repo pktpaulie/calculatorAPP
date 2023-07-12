@@ -42,5 +42,4 @@ def calculate(context):
         answer = first_number ** second_number
     else:
         answer = "invalid operator"
-
     return str(answer)
