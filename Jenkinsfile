@@ -32,14 +32,17 @@ pipeline {
       stage('Test') {
         steps {
           echo 'Testing..'
+          sh '''stage(\'Test\') {
+        sh "python manage.py test"
+    }'''
+          }
         }
-      }
 
-      stage('Deploy') {
-        steps {
-          echo 'Deploying....'
+        stage('Deploy') {
+          steps {
+            echo 'Deploying....'
+          }
         }
-      }
 
+      }
     }
-  }
