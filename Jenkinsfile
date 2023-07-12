@@ -5,10 +5,8 @@ node {
         deleteDir()
         checkout scm
         sh 'git submodule update --init --recursive'
-        
         def workspace = pwd()
-        sh "cp /var/jenkins_home/deploy-app-vars.yml ${workspace}/ci/ansible/"
-        sh "cp /var/jenkins_home/ansible-hosts ${workspace}/ci/ansible/hosts"
+        
         sh '''if [ ! -d "venv" ]; then
             virtualenv venv
         fi'''
@@ -35,7 +33,6 @@ node {
     }
 
 }
-
 
 stage('Production deploy approval') {
     timeout(time: 5, unit: 'DAYS') {
