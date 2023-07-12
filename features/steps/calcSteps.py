@@ -4,6 +4,7 @@ from behave import given, when, then
 def step_given_calculator(context):
     # Initialize the calculator or any necessary setup
     pass
+
 @when('I enter "{number}" as the first number')
 def step_when_enter_first_number(context, number):
     context.first_number = number
@@ -31,8 +32,10 @@ def calculate(context):
     elif operation == "-":
         answer = first_number - second_number
     elif operation == "/":
+
         try:
             answer = first_number / second_number
+            
         except ZeroDivisionError:
             answer = "Error: Cannot divide by zero"
     elif operation == "*":
@@ -42,4 +45,4 @@ def calculate(context):
     else:
         answer = "invalid operator"
 
-    return answer
+    return str(answer)
