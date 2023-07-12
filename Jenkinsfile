@@ -2,7 +2,7 @@ pipeline {
   agent any
   stages {
 
-    stage('Build') {
+    stage('Git') {
       steps {
         echo 'Testing..'
         sh '''#!groovy
@@ -12,20 +12,24 @@ pipeline {
         deleteDir()
         checkout scm
         
+    }
+}'''
+      }
+    }
+    stage('Setup') {
+      steps {
         sh \'\'\'if [ ! -d "venv" ]; then
             virtualenv venv
         fi\'\'\'
         sh ". venv/bin/activate"
         sh "pip install django"
         sh "pip install behave"
+        sh "pip install pytest"
         sh "pip install -r requirements.txt"
         sh "python manage.py makemigrations"
         sh "python manage.py migrate"
-        
-    }
-}'''
+        }
       }
-    }
 
     stage('Test') {
       steps {
