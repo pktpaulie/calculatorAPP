@@ -11,8 +11,7 @@ pipeline {
     stage(\\\'Preparation\\\') {
         deleteDir()
         checkout scm
-        sh "cd /var/jenkins_home/deploy-app-vars.yml ${workspace}/ci/ansible/"
-        sh "cd /var/jenkins_home/ansible-hosts ${workspace}/ci/ansible/hosts"
+        
         sh \'\'\'if [ ! -d "venv" ]; then
             virtualenv venv
         fi\'\'\'
