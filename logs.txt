@@ -5,3 +5,36 @@
 2023-07-12 01:17:23,210 - WARNING - Not Found: /static/css/main.css
 2023-07-12 01:17:23,222 - WARNING - Not Found: /static/js/main.js
 2023-07-12 01:17:23,322 - WARNING - Not Found: /favicon.ico
+2023-07-12 11:00:49,334 - WARNING - Not Found: /static/css/main.css
+2023-07-12 11:00:49,475 - WARNING - Not Found: /static/js/main.js
+2023-07-12 11:00:50,221 - WARNING - Not Found: /static/js/main.js
+2023-07-12 11:00:51,385 - WARNING - Not Found: /static/css/main.css
+2023-07-12 11:00:51,412 - WARNING - Not Found: /favicon.ico
+2023-07-12 11:01:01,137 - INFO - using the modulus logic of calculator Gp-3
+2023-07-12 11:01:04,323 - ERROR - Internal Server Error: /calculate
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\Bootcamp\CICD\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Desktop\Bootcamp\CICD\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Desktop\Bootcamp\CICD\venv\calculatorAPP\calculator_app\views.py", line 50, in calculate
+    return render('index')
+TypeError: render() missing 1 required positional argument: 'template_name'
+2023-07-12 11:02:20,664 - WARNING - Not Found: /static/js/main.js
+2023-07-12 11:02:20,669 - WARNING - Not Found: /static/css/main.css
+2023-07-12 11:02:20,704 - WARNING - Not Found: /static/js/main.js
+2023-07-12 11:02:20,724 - WARNING - Not Found: /static/css/main.css
+2023-07-12 11:02:37,462 - WARNING - Not Found: /static/js/main.js
+2023-07-12 11:02:37,464 - WARNING - Not Found: /static/css/main.css
+2023-07-12 11:02:37,475 - WARNING - Not Found: /static/css/main.css
+2023-07-12 11:02:37,954 - WARNING - Not Found: /favicon.ico
+2023-07-12 11:02:44,958 - INFO - Using the division logic of calculator Gp-3
+2023-07-12 11:02:47,094 - ERROR - Internal Server Error: /calculate
+Traceback (most recent call last):
+  File "C:\Users\dell\Desktop\Bootcamp\CICD\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dell\Desktop\Bootcamp\CICD\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\dell\Desktop\Bootcamp\CICD\venv\calculatorAPP\calculator_app\views.py", line 50, in calculate
+    return render('index')
+TypeError: render() missing 1 required positional argument: 'template_name'

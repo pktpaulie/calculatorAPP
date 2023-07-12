@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-from django.shortcuts import render,redirect
-=======
 import logging
 from django.shortcuts import render
->>>>>>> 74c33e6d20788e1b6c502a0fa399c59170f52e20
 from .models import Computation
 from .forms import CalculatorForm
 
@@ -53,16 +49,12 @@ def calculate(request):
             data.save()
             return render('index')
 
-<<<<<<< HEAD
-    form = CalculatorForm()
-=======
         # context = {
         #     'form': form,
         #     'data': data,
         #     'answer': answer,
         #     }
 
->>>>>>> 74c33e6d20788e1b6c502a0fa399c59170f52e20
     return render(request, "index.html", {'answer': answer, "computations": computations})
 
 
