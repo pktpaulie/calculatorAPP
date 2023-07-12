@@ -1,7 +1,8 @@
 #!groovy
 
 node {
-    stage('Preparation') {
+    stages{
+        stage('Preparation') {
         deleteDir()
         checkout scm
         sh 'git submodule update --init --recursive'
@@ -55,4 +56,6 @@ node {
             )
         }
     }
+    }
+    
 }
