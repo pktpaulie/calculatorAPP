@@ -1,42 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage('Build') {
-      steps {
-        echo 'Building..'
-        sh '''#!groovy
-pipeline{
-    agent any
-    stages {
-       stage(\'Setup Python Virtual ENV for dependencies\'){
-       steps  {
-            sh \'\'\'
-            
-            chmod +x /envsetup.sh
-            ./envsetup.sh
-            \'\'\'}
-        }
-        stage(\'Setup Gunicorn Setup\'){
-            steps {
-                sh \'\'\'
-                chmod +x /gunicorn.sh
-                ./gunicorn.sh
-                \'\'\'
-            }
-        }
-        stage(\'setup NGINX\'){
-            steps {
-                sh \'\'\'
-                chmod +x /nginx.sh
-                ./nginx.sh
-                \'\'\'
-            }
-        }
-    }
-}
-'''
-      }
-    }
 
     stage('Build') {
       steps {
@@ -47,6 +11,17 @@ pipeline {
     stage(\\\'Preparation\\\') {
         deleteDir()
         checkout scm
+        sh "cd /var/jenkins_home/deploy-app-vars.yml ${workspace}/ci/ansible/"
+        sh "cd /var/jenkins_home/ansible-hosts ${workspace}/ci/ansible/hosts"
+        sh \'\'\'if [ ! -d "venv" ]; then
+            virtualenv venv
+        fi\'\'\'
+        sh ". venv/bin/activate"
+        sh "pip install django"
+        sh "pip install behave"
+        sh "pip install -r requirements.txt"
+        sh "python manage.py makemigrations"
+        sh "python manage.py migrate"
         
     }
 }'''
