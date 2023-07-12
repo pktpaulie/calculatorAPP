@@ -6,7 +6,7 @@ node {
         checkout scm
         //sh 'git submodule update --init --recursive'
         def workspace = pwd()
-        
+        shd "pip3 install virtualenv"
         sh '''if [ ! -d "venv" ]; then
             virtualenv venv
         fi'''
