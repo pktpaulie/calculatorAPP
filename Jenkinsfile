@@ -1,9 +1,11 @@
 #!groovy
 
 pipeline {
+    agent any
     stages{
         stage('Preparation') {
-        deleteDir()
+            steps{
+                deleteDir()
         checkout scm
         sh 'git submodule update --init --recursive'
         
@@ -18,6 +20,8 @@ pipeline {
         sh "pip install -r requirements.txt"
         sh "python manage.py makemigrations"
         sh "python manage.py migrate"
+            }
+        
     }
 
     stage('Test') {
@@ -27,7 +31,8 @@ pipeline {
     
 
     stage('Staging deploy') {
-        ansiColor('xterm') {
+        steps{
+            ansiColor('xterm') {
             ansiblePlaybook(
                     colorized: true,
                     inventory: 'ci/ansible/hosts',
@@ -35,6 +40,8 @@ pipeline {
                     sudoUser: null
             )
         }
+        }
+        
     }
 
 }
