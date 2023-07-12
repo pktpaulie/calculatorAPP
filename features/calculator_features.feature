@@ -1,8 +1,8 @@
 Feature: Calculator
 
+
   Scenario: Addition
 
-    Given I have a calculator
     When I enter "5" as the first number
     And I enter "+" as the operation
     And I enter "3" as the second number

@@ -1,4 +1,4 @@
-from behave import given, when, then
+from behave import *
 
 @given('I have a calculator')
 def step_given_calculator(context):
