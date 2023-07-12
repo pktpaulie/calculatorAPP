@@ -1,6 +1,5 @@
-#!groovy
-
-node {
+pipeline {
+    agent any
     stage(\'Preparation\') {
         deleteDir()
         checkout scm
