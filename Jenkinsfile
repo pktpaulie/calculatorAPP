@@ -4,7 +4,7 @@ node {
     stage('Preparation') {
         deleteDir()
         checkout scm
-        sh 'git submodule update --init --recursive'
+        //sh 'git submodule update --init --recursive'
         def workspace = pwd()
         
         sh '''if [ ! -d "venv" ]; then
