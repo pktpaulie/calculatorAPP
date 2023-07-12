@@ -1,6 +1,6 @@
 #!groovy
 
-node {
+pipeline {
     stages{
         stage('Preparation') {
         deleteDir()
