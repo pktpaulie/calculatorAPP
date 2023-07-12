@@ -1,6 +1,9 @@
 #!groovy
 
 node {
+    stages{
+        
+    }
     stage('Preparation') {
         deleteDir()
         checkout scm
@@ -18,14 +21,13 @@ node {
         sh "python manage.py makemigrations"
         sh "python manage.py migrate"
     }
-}
-node {
+
     stage('Test') {
         sh "python manage.py test"
     }
-}
 
-node {
+    
+
     stage('Staging deploy') {
         ansiColor('xterm') {
             ansiblePlaybook(
@@ -36,12 +38,13 @@ node {
             )
         }
     }
+
 }
-node {
-    stage('Production deploy approval') {
-        timeout(time: 5, unit: 'DAYS') {
-            def deploy = input(id: 'userInput', message: 'Deploy to production?')
-        }
+
+
+stage('Production deploy approval') {
+    timeout(time: 5, unit: 'DAYS') {
+        def deploy = input(id: 'userInput', message: 'Deploy to production?')
     }
 }
 
