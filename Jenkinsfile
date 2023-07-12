@@ -4,7 +4,8 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Building..'
-        sh '''pipeline {
+        sh '''#!groovy
+pipeline {
     agent any
     stage(\\\'Preparation\\\') {
         deleteDir()
@@ -26,23 +27,23 @@ pipeline {
     }
 
 }'''
-        }
-      }
-
-      stage('Test') {
-        steps {
-          echo 'Testing..'
-          sh '''stage(\'Test\') {
-        sh "python manage.py test"
-    }'''
-          }
-        }
-
-        stage('Deploy') {
-          steps {
-            echo 'Deploying....'
-          }
-        }
-
       }
     }
+
+    stage('Test') {
+      steps {
+        echo 'Testing..'
+        sh '''stage(\'Test\') {
+        sh "python manage.py test"
+    }'''
+        }
+      }
+
+      stage('Deploy') {
+        steps {
+          echo 'Deploying....'
+        }
+      }
+
+    }
+  }
