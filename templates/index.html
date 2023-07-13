@@ -16,7 +16,7 @@
             <h2>Calculator App</h2>
             <form action="{% url 'calculate' %}" method="POST">
                 {% csrf_token %}                
-                    <input type="text" value="{{ answer }}" class="form-control" id="my_answer" readonly>
+                    <input type="text" name="expected_result" value="{{ answer }}" class="form-control" id="my_answer" readonly>
                 <br/>
                 <input type="text" name="first_number" class="form-control" placeholder="Enter First Number" required>
                 <br/>
@@ -24,7 +24,7 @@
                 <br/>
                 <input type="text" name="second_number" class="form-control" placeholder="Enter Second Number" required>
                 <br/> 
-                <button type="submit" class="btn btn-outline-success" value="calculate" id="calculate-button">Calculate</button>
+                <button type="submit" class="btn btn-outline-success" value="calculate" id="calculate_button">Calculate</button>
             </form>
             <br/>
 

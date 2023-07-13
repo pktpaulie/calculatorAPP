@@ -34,8 +34,8 @@ def calculate(request):
                     answer = int(first_number) / int(second_number)
                     logging.info("Using the division logic of calculator Gp-3")
                 except ZeroDivisionError:
-                    logging.info(
-                        f"Error: Cannot divide {first_number} by zero")
+                    answer = "Error: Cannot divide by zero"
+
             elif operand == "*":
                 answer = int(first_number) * int(second_number)
                 logging.info("Using the multiply logic of calculator Gp-3")
@@ -47,7 +47,7 @@ def calculate(request):
             data = Computation(first_number=first_number, operation=operand,
                                second_number=second_number, answer=answer)
             data.save()
-            return render('index')
+            
 
         # context = {
         #     'form': form,
