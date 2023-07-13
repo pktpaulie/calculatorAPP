@@ -4,17 +4,22 @@ from .models import Computation
 from .forms import CalculatorForm
 
 # Configure logging basic info to use
-logging.basicConfig(filename='logs.txt', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    filename="logs.txt",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s",
+)
 
 
 # Create your views here.
+
 
 def index(request):
     return render(request, "index.html")
 
 
 def calculate(request):
-    answer = ''
+    answer = ""
     computations = Computation.objects.order_by("-id")[:5]
 
     if request.method == "POST":
@@ -44,10 +49,13 @@ def calculate(request):
                 logging.info("using the modulus logic of calculator Gp-3")
             else:
                 answer = "invalid operator"
-            data = Computation(first_number=first_number, operation=operand,
-                               second_number=second_number, answer=answer)
+            data = Computation(
+                first_number=first_number,
+                operation=operand,
+                second_number=second_number,
+                answer=answer,
+            )
             data.save()
-            
 
         # context = {
         #     'form': form,
@@ -55,7 +63,9 @@ def calculate(request):
         #     'answer': answer,
         #     }
 
-    return render(request, "index.html", {'answer': answer, "computations": computations})
+    return render(
+        request, "index.html", {"answer": answer, "computations": computations}
+    )
 
 
 def read_history(request):
