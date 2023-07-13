@@ -2,7 +2,7 @@ from behave import given, when, then
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-import time
+
 
 
 @given('I am on the Calculator App page')
