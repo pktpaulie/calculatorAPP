@@ -20,6 +20,7 @@ Feature: Front end calculatorApp test
         And I enter2 "4" into the "second_number" field
         And I click the "calculate_button" button
         Then I should see "6" in the "expected_result" field
+        
     @FrontendDivision
     Scenario: Calculate division
         Given I am on the Calculator App page
@@ -28,6 +29,7 @@ Feature: Front end calculatorApp test
         And I enter2 "4" into the "second_number" field
         And I click the "calculate_button" button
         Then I should see "5.0" in the "expected_result" field
+
     @FrontendMultiplication
     Scenario: Calculate multiplication
         Given I am on the Calculator App page
@@ -36,6 +38,7 @@ Feature: Front end calculatorApp test
         And I enter2 "4" into the "second_number" field
         And I click the "calculate_button" button
         Then I should see "20" in the "expected_result" field
+
     @FrontendPowerOf'n'
     Scenario: Calculate to the power of 'n'
         Given I am on the Calculator App page
