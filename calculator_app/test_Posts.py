@@ -30,9 +30,9 @@ class CalculatorAppTest(unittest.TestCase):
         second_number_input.send_keys(Keys.RETURN)
 
         expected_result_element = self.driver.find_element(By.NAME, "expected_result")
-        expected_result = expected_result_element.text
+        expected_result = expected_result_element.get_attribute("value")
 
-        assert str(expected_result) == '8'
+        self.assertEqual(expected_result, '8')
 
     def test_calculate_subtraction(self):
         self.driver.get(
@@ -51,9 +51,9 @@ class CalculatorAppTest(unittest.TestCase):
         second_number_input.send_keys(Keys.RETURN)
 
         expected_result_element = self.driver.find_element(By.NAME, "expected_result")
-        expected_result = expected_result_element.text
+        expected_result = expected_result_element.get_attribute("value")
 
-        assert str(expected_result) == '6'
+        self.assertEqual(expected_result, '6')
 
 
 if __name__ == "__main__":
