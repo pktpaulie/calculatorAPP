@@ -15,10 +15,10 @@ def index(request):
 
 def calculate(request):
     answer = ''
-    data = Computation.objects.all()
+    computations = Computation.objects.order_by("-id")[:5]
 
-    form = CalculatorForm(request.POST)
     if request.method == "POST":
+        form = CalculatorForm(request.POST)
         if form.is_valid():
             first_number = request.POST.get("first_number")
             operand = request.POST.get("operation")
@@ -34,8 +34,8 @@ def calculate(request):
                     answer = int(first_number) / int(second_number)
                     logging.info("Using the division logic of calculator Gp-3")
                 except ZeroDivisionError:
-                    logging.info(
-                        f"Error: Cannot divide {first_number} by zero")
+                    answer = "Error: Cannot divide by zero"
+
             elif operand == "*":
                 answer = int(first_number) * int(second_number)
                 logging.info("Using the multiply logic of calculator Gp-3")
@@ -47,8 +47,7 @@ def calculate(request):
             data = Computation(first_number=first_number, operation=operand,
                                second_number=second_number, answer=answer)
             data.save()
-            data = Computation.objects.last()
-            computations = Computation.objects.order_by("-id")[:5]
+            
 
         # context = {
         #     'form': form,

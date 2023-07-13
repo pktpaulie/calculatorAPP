@@ -1,9 +1,10 @@
-from behave import given, when, then
+from behave import *
 
 @given('I have a calculator')
 def step_given_calculator(context):
     # Initialize the calculator or any necessary setup
     pass
+
 @when('I enter "{number}" as the first number')
 def step_when_enter_first_number(context, number):
     context.first_number = number
@@ -41,5 +42,4 @@ def calculate(context):
         answer = first_number ** second_number
     else:
         answer = "invalid operator"
-
-    return answer
+    return str(answer)

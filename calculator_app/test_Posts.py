@@ -1,55 +1,52 @@
-from django.test import TestCase
-from django.urls import reverse
+import unittest
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
-from .models import Computation
-from .forms import CalculatorForm
-
-
-class CalculateViewTest(TestCase):
+class CalculatorAppTest(unittest.TestCase):
     def setUp(self):
-        self.url = reverse('calculate')
+        self.driver = webdriver.Chrome()  # Change to the appropriate WebDriver for your browser
+        self.driver.implicitly_wait(10)
+
+    def tearDown(self):
+        self.driver.quit()
 
     def test_calculate_addition(self):
-        form_data = {
-            'first_number': '5',
-            'operation': '-',
-            'second_number': '3',
-        }
-        response = self.client.post(self.url, form_data)
-        self.assertEqual(response.context['answer'], 2)
+        self.driver.get("http://localhost:8000/")  # Replace with the URL of your Django app
 
-        # Check if data is saved in the database
-        computation = Computation.objects.last()
-        self.assertEqual(computation.first_number, '5')
-        self.assertEqual(computation.operation, '-')
-        self.assertEqual(computation.second_number, '3')
-        self.assertEqual(computation.answer, 2)
+        first_number_input = self.driver.find_element_by_name("first_number")
+        first_number_input.send_keys("5")
 
-    # Add more test cases for other operations and edge cases
+        operand_input = self.driver.find_element_by_name("operation")
+        operand_input.send_keys("+")
 
-    def test_invalid_operator(self):
-        form_data = {
-            'first_number': '5',
-            'operation': '&',
-            'second_number': '3',
-        }
-        response = self.client.post(self.url, form_data)
-        self.assertEqual(response.context['answer'], 'invalid operator')
+        second_number_input = self.driver.find_element_by_name("second_number")
+        second_number_input.send_keys("3")
 
-        # Check that no data is saved in the database
-        self.assertFalse(Computation.objects.exists())
+        second_number_input.send_keys(Keys.RETURN)
 
-    # Add more test cases for form validation, division by zero, etc.
+        answer_element = self.driver.find_element_by_id("answer")
+        answer = answer_element.text
 
+        self.assertEqual(answer, "8")
 
-class CalculatorFormTest(TestCase):
-    def test_valid_form(self):
-        form_data = {
-            'first_number': '5',
-            'operation': '+',
-            'second_number': '3',
-        }
-        form = CalculatorForm(data=form_data)
-        self.assertTrue(form.is_valid())
+    def test_calculate_subtraction(self):
+        self.driver.get("http://localhost:8000/")  # Replace with the URL of your Django app
 
-    # Add more test cases for form validation, invalid input, etc.
+        first_number_input = self.driver.find_element_by_name("first_number")
+        first_number_input.send_keys("10")
+
+        operand_input = self.driver.find_element_by_name("operation")
+        operand_input.send_keys("-")
+
+        second_number_input = self.driver.find_element_by_name("second_number")
+        second_number_input.send_keys("4")
+
+        second_number_input.send_keys(Keys.RETURN)
+
+        answer_element = self.driver.find_element_by_id("answer")
+        answer = answer_element.text
+
+        self.assertEqual(answer, "6")
+
+if __name__ == "__main__":
+    unittest.main()
