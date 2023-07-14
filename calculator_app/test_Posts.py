@@ -3,21 +3,32 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
+
 class CalculatorAppTest(unittest.TestCase):
     def setUp(self):
-        self.driver = (
-            webdriver.Chrome()
-        )  # Change to the appropriate WebDriver for your browser
+        """
+        Set up the test case by initializing the WebDriver and implicitly waiting for elements to be found.
+        """
+        self.driver = webdriver.Chrome()  
         self.driver.implicitly_wait(10)
 
     def tearDown(self):
+        """
+        Clean up the test case by quitting the WebDriver.
+        """
         self.driver.quit()
 
     def test_calculate_addition(self):
-        self.driver.get(
-            "http://localhost:8000/"
-        )  # Replace with the URL of your Django app
+        """
+        Test the addition calculation functionality of the calculator app.
 
+        1. Open the calculator app.
+        2. Enter the first number, operation, and second number.
+        3. Press the Enter key to perform the calculation.
+        4. Get the expected result from the input field.
+        5. Assert that the expected result matches the actual result.
+        """
+        self.driver.get("http://localhost:8000/")  
         first_number_input = self.driver.find_element(By.NAME, "first_number")
         first_number_input.send_keys("5")
 
@@ -35,9 +46,16 @@ class CalculatorAppTest(unittest.TestCase):
         self.assertEqual(expected_result, '8')
 
     def test_calculate_subtraction(self):
-        self.driver.get(
-            "http://localhost:8000/"
-        )  # Replace with the URL of your Django app
+        """
+        Test the subtraction calculation functionality of the calculator app.
+
+        1. Open the calculator app.
+        2. Enter the first number, operation, and second number.
+        3. Press the Enter key to perform the calculation.
+        4. Get the expected result from the input field.
+        5. Assert that the expected result matches the actual result.
+        """
+        self.driver.get("http://localhost:8000/")  
 
         first_number_input = self.driver.find_element(By.NAME, "first_number")
         first_number_input.send_keys("10")
