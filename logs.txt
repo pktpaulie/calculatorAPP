@@ -427,3 +427,539 @@
 2023-07-14 00:07:36,213 - WARNING - Not Found: /static/js/main.js
 2023-07-14 00:07:36,216 - WARNING - Not Found: /static/css/main.css
 2023-07-14 00:07:36,266 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:17:26,698 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:17:26,729 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:17:27,449 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:17:27,781 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:17:27,869 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:17:32,032 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:17:32,035 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:17:32,052 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:17:32,067 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:17:32,093 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:18:37,414 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:18:37,488 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:18:37,957 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:18:38,309 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:18:38,911 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 00:18:41,527 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:18:41,531 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:18:41,676 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:18:51,059 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:18:51,112 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:18:51,605 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:18:51,787 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:18:52,500 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 00:18:54,999 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:18:55,002 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:18:55,044 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:03,752 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:03,830 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:19:04,601 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:04,769 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:19:05,501 - INFO - Using the division logic of calculator Gp-3
+2023-07-14 00:19:08,943 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:08,946 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:19:08,979 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:17,536 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:17,633 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:19:18,056 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:19,152 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:19:19,872 - INFO - Using the multiply logic of calculator Gp-3
+2023-07-14 00:19:23,307 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:23,309 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:19:23,442 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:32,606 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:32,713 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:19:33,545 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:33,907 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:19:35,039 - INFO - using the modulus logic of calculator Gp-3
+2023-07-14 00:19:37,926 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:37,929 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:19:38,170 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:47,913 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:47,993 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:19:48,481 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:48,654 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:19:52,858 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:19:52,861 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:19:52,906 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:20:02,203 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:20:02,262 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:20:02,893 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:20:03,597 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:20:07,768 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:20:07,771 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:20:07,807 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:40:42,654 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:40:42,755 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:40:43,238 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:40:43,677 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:40:44,418 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 00:40:46,770 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:40:46,773 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:40:46,834 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:41:07,157 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:41:07,198 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:41:07,876 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:41:08,410 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:41:09,065 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 00:41:11,457 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:41:11,460 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:41:11,514 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:43:15,765 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:43:15,874 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:43:16,324 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:43:17,247 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:43:17,688 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 00:43:20,493 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:43:20,496 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:43:20,530 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:43:28,909 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:43:28,969 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:43:29,449 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:43:30,024 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:43:30,673 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 00:43:32,971 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:43:32,973 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:43:33,019 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:45:06,288 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:45:06,351 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:45:06,908 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:45:07,592 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:45:08,366 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 00:45:10,865 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:45:10,867 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:45:10,954 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:45:19,763 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:45:19,818 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:45:20,401 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:45:21,010 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:45:21,601 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 00:45:23,989 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:45:23,991 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:45:24,087 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:46:56,593 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:46:56,614 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:46:57,221 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:46:57,835 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:46:58,456 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 00:47:00,959 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:47:00,960 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:47:00,996 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:47:15,207 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:47:15,259 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:47:15,984 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:47:16,711 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:47:17,386 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 00:47:19,874 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:47:19,877 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:47:19,928 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:48:34,728 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:48:35,015 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:48:35,556 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:48:36,000 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:48:36,495 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 00:48:39,159 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:48:39,161 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:48:39,180 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:48:46,800 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:48:46,901 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:48:47,429 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:48:47,670 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:48:48,264 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 00:48:50,678 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:48:50,681 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:48:50,729 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:54:03,411 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:54:03,458 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:54:03,945 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:54:05,018 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:54:05,540 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 00:54:07,955 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:54:07,956 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:54:07,993 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:54:16,052 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:54:16,080 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:54:16,561 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:54:16,958 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:54:17,403 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 00:54:19,804 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:54:19,805 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:54:19,859 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:55:33,858 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:55:33,877 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:55:34,362 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:55:35,091 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:55:36,676 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 00:55:39,712 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:55:39,713 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:55:40,048 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:55:52,987 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:55:53,272 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:55:53,821 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:55:54,540 - WARNING - Not Found: /favicon.ico
+2023-07-14 00:55:55,192 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 00:55:57,508 - WARNING - Not Found: /static/css/main.css
+2023-07-14 00:55:57,509 - WARNING - Not Found: /static/js/main.js
+2023-07-14 00:55:57,686 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:02:56,689 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:02:56,794 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:02:57,508 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:02:58,336 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:02:59,280 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 01:03:01,856 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:01,859 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:03:01,891 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:11,484 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:11,491 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:03:12,170 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:14,040 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:03:14,681 - INFO - Using the division logic of calculator Gp-3
+2023-07-14 01:03:17,036 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:03:17,037 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:17,088 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:27,425 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:27,461 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:03:28,193 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:28,222 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:03:28,821 - INFO - Using the multiply logic of calculator Gp-3
+2023-07-14 01:03:31,253 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:31,265 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:03:31,303 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:40,110 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:40,172 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:03:40,653 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:41,165 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:03:42,209 - INFO - using the modulus logic of calculator Gp-3
+2023-07-14 01:03:44,569 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:44,572 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:03:44,633 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:54,732 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:54,750 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:03:55,285 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:56,308 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:03:59,431 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:03:59,435 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:03:59,483 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:04:09,554 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:04:09,615 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:04:10,154 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:04:10,782 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:04:14,262 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:04:14,264 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:04:14,288 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:23,975 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:24,029 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:06:24,563 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:25,331 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:06:26,334 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 01:06:28,783 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:28,786 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:06:28,834 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:45,305 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:45,335 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:06:45,879 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:46,100 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:06:46,883 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 01:06:49,189 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:49,192 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:06:49,249 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:57,658 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:57,696 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:06:58,209 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:06:58,613 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:06:59,275 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 01:07:01,598 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:01,601 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:07:01,642 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:10,233 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:10,267 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:07:10,834 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:11,125 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:07:11,828 - INFO - Using the division logic of calculator Gp-3
+2023-07-14 01:07:14,140 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:14,144 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:07:14,207 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:22,180 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:22,192 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:07:22,252 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:22,670 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:22,897 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:07:23,793 - INFO - Using the multiply logic of calculator Gp-3
+2023-07-14 01:07:26,523 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:26,524 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:07:26,555 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:35,240 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:35,283 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:07:35,767 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:36,745 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:07:38,219 - INFO - using the modulus logic of calculator Gp-3
+2023-07-14 01:07:40,732 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:40,737 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:07:40,831 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:53,760 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:53,852 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:07:54,383 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:54,767 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:07:58,143 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:07:58,146 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:07:58,216 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:08:06,928 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:08:06,963 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:08:07,569 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:08:07,839 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:08:10,794 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:08:10,819 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:08:10,854 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:15,697 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:15,749 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:09:16,245 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:16,569 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:09:17,614 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 01:09:20,219 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:20,222 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:09:20,277 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:29,538 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:29,590 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:09:30,120 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:31,667 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:09:32,384 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 01:09:34,714 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:34,726 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:09:34,790 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:43,961 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:44,005 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:09:44,792 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:45,103 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:09:46,709 - INFO - Using the division logic of calculator Gp-3
+2023-07-14 01:09:49,000 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:49,003 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:09:49,076 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:56,477 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:56,513 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:09:56,960 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:09:57,203 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:09:58,284 - INFO - Using the multiply logic of calculator Gp-3
+2023-07-14 01:10:00,786 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:00,790 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:10:00,878 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:09,262 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:09,351 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:10:09,869 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:10,493 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:10:11,662 - INFO - using the modulus logic of calculator Gp-3
+2023-07-14 01:10:14,060 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:14,062 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:10:14,129 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:22,835 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:22,884 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:10:23,298 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:23,983 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:10:29,843 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:29,846 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:10:29,884 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:38,158 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:38,283 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:10:38,659 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:39,517 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:10:43,311 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:10:43,316 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:10:43,388 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:19:29,984 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:19:29,986 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:19:30,355 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:19:37,921 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 01:19:40,548 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:19:40,555 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:19:40,576 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:24:26,219 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:24:26,240 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:24:27,140 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:24:27,430 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:24:28,975 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 01:24:31,464 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:24:31,501 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:24:31,526 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:24:43,611 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:24:43,687 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:24:44,334 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:24:44,725 - WARNING - Not Found: /favicon.ico
+2023-07-14 01:24:45,486 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 01:24:47,918 - WARNING - Not Found: /static/css/main.css
+2023-07-14 01:24:47,930 - WARNING - Not Found: /static/js/main.js
+2023-07-14 01:24:47,953 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:39:56,651 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:39:56,743 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:39:57,305 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:39:59,441 - WARNING - Not Found: /favicon.ico
+2023-07-14 07:40:06,366 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 07:40:09,670 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:40:09,787 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:40:09,799 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:40:29,253 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:40:29,469 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:40:30,073 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:40:30,907 - WARNING - Not Found: /favicon.ico
+2023-07-14 07:40:31,481 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 07:40:33,877 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:40:33,878 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:40:33,973 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:40:49,862 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:40:49,993 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:40:50,767 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:40:51,138 - WARNING - Not Found: /favicon.ico
+2023-07-14 07:40:51,768 - INFO - Using the division logic of calculator Gp-3
+2023-07-14 07:40:54,174 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:40:54,175 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:40:54,243 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:07,284 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:07,400 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:41:08,899 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:09,289 - WARNING - Not Found: /favicon.ico
+2023-07-14 07:41:10,362 - INFO - Using the multiply logic of calculator Gp-3
+2023-07-14 07:41:13,712 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:13,714 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:41:13,787 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:22,157 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:22,215 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:41:22,647 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:23,099 - WARNING - Not Found: /favicon.ico
+2023-07-14 07:41:23,661 - INFO - Using the modulus logic of calculator Gp-3
+2023-07-14 07:41:26,769 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:26,771 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:41:26,824 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:34,986 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:35,059 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:41:35,619 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:35,945 - WARNING - Not Found: /favicon.ico
+2023-07-14 07:41:39,602 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:39,604 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:41:39,679 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:47,041 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:47,129 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:41:47,549 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:47,762 - WARNING - Not Found: /favicon.ico
+2023-07-14 07:41:51,755 - WARNING - Not Found: /static/css/main.css
+2023-07-14 07:41:51,756 - WARNING - Not Found: /static/js/main.js
+2023-07-14 07:41:51,833 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:00:20,077 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:00:20,400 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:00:20,996 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:00:21,278 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:00:33,279 - INFO - Using the modulus logic of calculator Gp-3
+2023-07-14 09:00:39,423 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:00:39,482 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:00:39,524 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:01:00,842 - INFO - Using the modulus logic of calculator Gp-3
+2023-07-14 09:01:04,156 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:01:04,164 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:01:04,180 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:07:26,969 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:07:27,059 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:07:27,609 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:07:36,407 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:07:37,847 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 09:07:40,724 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:07:40,727 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:07:40,756 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:07:50,503 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:07:50,520 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:07:51,129 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:07:52,588 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:07:53,451 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 09:07:56,825 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:07:56,833 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:07:56,876 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:05,130 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:05,249 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:08:05,922 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:06,208 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:08:06,930 - INFO - Using the division logic of calculator Gp-3
+2023-07-14 09:08:09,297 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:09,301 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:08:09,397 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:16,881 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:16,932 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:08:17,348 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:17,692 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:08:18,634 - INFO - Using the multiply logic of calculator Gp-3
+2023-07-14 09:08:21,962 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:21,963 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:08:22,019 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:30,856 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:30,885 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:08:31,332 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:32,127 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:08:32,795 - INFO - Using the modulus logic of calculator Gp-3
+2023-07-14 09:08:35,103 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:35,105 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:08:35,174 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:43,156 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:43,232 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:08:43,653 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:44,216 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:08:47,350 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:08:47,353 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:47,432 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:54,549 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:54,603 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:08:55,197 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:55,569 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:08:58,465 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:08:58,466 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:08:58,493 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:11,985 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:12,015 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:13:12,804 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:15,867 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:13:17,325 - INFO - Using the addition logic of calculator Gp-3
+2023-07-14 09:13:21,066 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:21,067 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:13:21,172 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:31,112 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:31,144 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:13:31,984 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:32,255 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:13:33,332 - INFO - Using the subtraction logic of calculator Gp-3
+2023-07-14 09:13:36,852 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:36,856 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:13:36,911 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:45,821 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:45,893 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:13:46,384 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:46,960 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:13:47,927 - INFO - Using the division logic of calculator Gp-3
+2023-07-14 09:13:50,542 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:50,544 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:13:50,566 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:59,116 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:13:59,167 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:13:59,755 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:00,805 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:14:01,898 - INFO - Using the multiply logic of calculator Gp-3
+2023-07-14 09:14:05,256 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:05,259 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:14:05,315 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:13,301 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:13,387 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:14:14,008 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:17,249 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:14:18,712 - INFO - Using the modulus logic of calculator Gp-3
+2023-07-14 09:14:21,134 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:21,135 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:14:21,191 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:30,633 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:30,684 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:14:31,366 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:32,438 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:14:35,903 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:35,906 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:14:35,950 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:44,721 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:44,754 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:14:45,211 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:46,820 - WARNING - Not Found: /favicon.ico
+2023-07-14 09:14:50,214 - WARNING - Not Found: /static/css/main.css
+2023-07-14 09:14:50,217 - WARNING - Not Found: /static/js/main.js
+2023-07-14 09:14:50,258 - WARNING - Not Found: /static/css/main.css
